@@ -15,7 +15,7 @@ export default function Navbar() {
         <div className="hidden md:flex gap-10 text-sm tracking-wider">
           <a href="#about" className="hover:text-gray-400">ABOUT</a>
           <a href="#skills" className="hover:text-gray-400">SKILLS</a>
-          <a href="#projects" className="hover:text-gray-400">PORTFOLIO</a>
+          <a href="#projects" className="hover:text-gray-400">PROJECTS</a>
         </div>
 
         {/* Contact Button */}
