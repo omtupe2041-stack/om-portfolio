@@ -3,57 +3,62 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="min-h-screen bg-black text-white flex items-center pt-20 overflow-hidden">
+      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
 
-      {/* Gradient background blobs */}
-      <div className="absolute top-[-100px] left-[-100px] w-72 h-72 bg-purple-500 rounded-full blur-3xl opacity-30 animate-pulse"></div>
-      <div className="absolute bottom-[-100px] right-[-100px] w-72 h-72 bg-blue-500 rounded-full blur-3xl opacity-30 animate-pulse"></div>
+        {/* Left Text */}
+        <motion.div
+          initial={{ opacity: 0, x: -60 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <p className="text-gray-400 text-lg mb-2">Hi, I am</p>
 
-      <motion.div
-        initial={{ opacity: 0, y: 60 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="text-center z-10 px-6"
-      >
-        {/* Profile Photo */}
-        <img
-          src="/profile.jpeg"
-          className="w-36 h-36 mx-auto rounded-full border-4 border-white/30 shadow-xl mb-6"
-          alt="profile"
-        />
+          <h1 className="text-5xl md:text-7xl font-bold mb-4">
+            Om Tupe
+          </h1>
 
-        {/* Heading */}
-        <h1 className="text-5xl font-bold mb-4">
-          Hi, I'm <span className="gradient-text">Om Tupe</span>
-        </h1>
+          <p className="text-gray-400 text-lg mb-8">
+            Python Full Stack Developer <br/>
+            Flask • Django • Web Applications
+          </p>
 
-        {/* Subtitle */}
-        <p className="text-gray-600 dark:text-gray-400 text-lg">
-          Python Full Stack Developer • Flask • Django • Web Development
-        </p>
+          <div className="flex gap-4">
+            <a
+              href="#projects"
+              className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
+            >
+              View Work
+            </a>
 
-        {/* Buttons */}
-        <div className="mt-8 flex justify-center gap-4">
+            <a
+              href="/resume.pdf"
+              download
+              className="border border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition"
+            >
+              Download CV
+            </a>
+          </div>
+        </motion.div>
 
-          {/* View Projects Button */}
-          <a
-            href="#projects"
-            className="px-6 py-3 rounded-lg bg-blue-600 text-white hover:scale-105 transition"
-          >
-            View Projects
-          </a>
+        {/* Right Image with rotated shape */}
+        <motion.div
+          initial={{ opacity: 0, x: 60 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="relative flex justify-center"
+        >
+          {/* Rotated background block */}
+          <div className="absolute w-80 h-96 bg-white rotate-12"></div>
 
-          {/* Download CV Button */}
-          <a
-            href="/resume.pdf"
-            download
-            className="px-6 py-3 rounded-lg border border-gray-400 hover:border-blue-500 transition"
-          >
-            Download CV
-          </a>
-
-        </div>
-      </motion.div>
+          {/* Profile Image */}
+          <img
+            src="/profile.jpeg"
+            alt="profile"
+            className="relative w-72 h-96 object-cover"
+          />
+        </motion.div>
+      </div>
     </section>
   );
 }

@@ -2,16 +2,21 @@
 import { motion } from "framer-motion";
 
 export default function Projects() {
-  const projects = [
-    {
-      title: "Student Management System",
-      desc: "Flask + MySQL CRUD application with authentication"
-    },
-    {
-      title: "Portfolio Website",
-      desc: "Responsive portfolio with modern UI"
-    }
-  ];
+ const projects = [
+  {
+    title: "Student Management System",
+    desc: "Flask + MySQL CRUD application with authentication"
+  },
+  {
+    title: "Portfolio Website",
+    desc: "Responsive portfolio with modern UI"
+  },
+  {
+    title: "Expense Tracker",
+    desc: "Web app to track income and expenses with data visualization"
+  }
+];
+
 
   return (
     <section id="projects" className="max-w-6xl mx-auto px-6 py-20">

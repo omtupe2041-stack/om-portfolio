@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 body {
-  @apply bg-white text-gray-900 dark:bg-[#0a0a0a] dark:text-gray-100;
+  @apply bg-white text-black dark:bg-black dark:text-white;
 }
 
-/* Gradient text utility */
+/* Premium gradient text */
 .gradient-text {
-  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+  background: linear-gradient(90deg,#000,#555,#000);
   -webkit-background-clip: text;
   color: transparent;
 }
