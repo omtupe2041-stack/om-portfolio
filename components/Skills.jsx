@@ -1,31 +1,41 @@
 export default function Skills() {
-  const skills = [
-    {
-      name: "HTML5",
-      icon: "https://img.icons8.com/color/48/html-5.png",
-      level: "90%",
-    },
-    {
-      name: "CSS3",
-      icon: "https://img.icons8.com/color/48/css3.png",
-      level: "85%",
-    },
-    {
-      name: "JavaScript",
-      icon: "https://img.icons8.com/color/48/javascript.png",
-      level: "80%",
-    },
-    {
-      name: "Python",
-      icon: "https://img.icons8.com/color/48/python.png",
-      level: "75%",
-    },
-    {
-      name: "SQL",
-      icon: "https://img.icons8.com/color/48/mysql-logo.png",
-      level: "78%",
-    },
-  ];
+ const skills = [
+  {
+    name: "HTML5",
+    icon: "https://img.icons8.com/color/48/html-5.png",
+    level: "90%",
+  },
+  {
+    name: "CSS3",
+    icon: "https://img.icons8.com/color/48/css3.png",
+    level: "85%",
+  },
+  {
+    name: "JavaScript",
+    icon: "https://img.icons8.com/color/48/javascript.png",
+    level: "80%",
+  },
+  {
+    name: "Python",
+    icon: "https://img.icons8.com/color/48/python.png",
+    level: "85%",
+  },
+  {
+    name: "Django",
+    icon: "https://img.icons8.com/color/48/django.png",
+    level: "75%",
+  },
+  {
+    name: "Flask",
+    icon: "https://img.icons8.com/ios-filled/50/ffffff/flask.png",
+    level: "70%",
+  },
+  {
+    name: "SQL",
+    icon: "https://img.icons8.com/color/48/mysql-logo.png",
+    level: "78%",
+  },
+];
 
   return (
     <section id="skills" className="py-20 bg-gray-50 dark:bg-black">
